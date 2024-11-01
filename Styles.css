@@ -119,10 +119,10 @@ nav a:hover {
 
 button {
   /* Estilos para el botón */
-  background-color: #ff0000;
+  background-color: #fdfdfd;
   /* Nuevo color de fondo naranja */
   border: none;
-  color: white;
+  color: rgb(8, 8, 8);
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
