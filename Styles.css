@@ -1,0 +1,325 @@
+#home {
+  width: 100%;
+  height: 500px;
+  opacity: 500%;
+  background-image: url('https://img.freepik.com/psd-gratis/mockup-vista-superior-disenador-grafico-portatil_23-2147675736.jpg?t=st=1730410809~exp=1730414409~hmac=754d8fb910a8765fad85d7760433d5d02505f08ab3d49663f0b49ec2d3586d2d&w=1380');
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .home {
+    text-align: center;
+  }
+
+  font-family: 'roboto';
+}
+
+#home {
+  background-color: rgba(0, 26, 15, 0.692);
+}
+
+
+
+#home {
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 13%;
+
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+/* Agregar una capa atenuada */
+#home::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(39, 39, 39, 0.11);
+  /* Color grisáceo con opacidad. */
+  z-index: 2;
+  /* Está encima de la imagen, pero detrás del texto. */
+}
+
+.hero {
+  position: relative;
+  z-index: 3;
+  /* Garantiza que el texto esté encima de la capa atenuada */
+}
+
+.titulo {
+  color: rgb(0, 132, 255);
+  text-align: center; /* Centrar el texto del título */
+  font-family: 'Roboto', sans-serif; /* Agregar Roboto como la familia de fuente */
+}
+
+#titulo-principal {
+  color: blue;
+}
+
+/* nav bar
+/* Estilos para la barra de navegación */
+nav {
+  background-color: rgba(26, 26, 26, 0.897);
+  /* Fondo negro */
+  color: white;
+  /* Texto blanco */
+  padding: 0.8%;
+  /* Espacio alrededor del texto */
+  font-family: 'Roboto', sans-serif;  /* Agrega Roboto como la familia de fuente */
+  text-align: center; /* Centrar el texto de la barra de navegación */
+}
+
+nav ul {
+  list-style: none;
+  /* Quita los puntos de la lista */
+  margin: 0;
+  /* Quita el margen por defecto */
+  padding: 0;
+  /* Quita el padding por defecto */
+  display: flex;
+  /* Alinea los elementos en horizontal */
+  justify-content: center;
+  /* Centra los elementos en el contenedor */
+}
+
+nav li {
+  margin: 0 10px;
+  /* Espacio entre los elementos */
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  /* Texto blanco */
+  text-decoration: none;
+  /* Quita el subrayado */
+  font-family: 'Roboto', sans-serif; /* Agrega Roboto como la familia de fuente */
+}
+
+nav a:hover {
+  color: #8c48cc;
+}
+
+button {
+  /* Estilos para el botón */
+  background-color: #8c48cc;
+  /* Nuevo color de fondo naranja */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 30px;
+  cursor: pointer;
+  text-align: center; /* Centrar el texto del botón */
+  font-family: 'Roboto', sans-serif; /* Agrega Roboto como la familia de fuente */
+}
+
+button:hover {
+  /* Estilos al pasar el ratón por encima */
+  background-color: #8c48cc;
+  /* Color de fondo más oscuro */
+}
+
+/* Estilos para dispositivos móviles (ancho de pantalla menor a 768px) */
+@media (max-width: 768px) {
+  #home {
+    height: auto; /* La altura del contenedor se ajusta automáticamente */
+    padding: 20px;  /* Se agrega espacio alrededor del contenido */
+  }
+
+  .titulo {
+    font-size: 20px; /* Se reduce el tamaño de fuente para mejor legibilidad */
+    text-align: center; /* Centrar el texto del título */
+    font-family: 'Roboto', sans-serif; /* Agrega Roboto como la familia de fuente */
+  }
+
+  nav ul {
+    flex-direction: column; /* Los elementos del menú se apilan verticalmente */
+    align-items: flex-start; /* Se alinean los elementos al inicio (izquierda) */
+  }
+
+  nav li {
+    margin-bottom: 10px; /* Se agrega espacio entre los elementos del menú */
+  }
+}
+
+/* Estilos para la imagen de portada */
+#home img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+
+p {
+  background-color: black;
+  color: white;
+  opacity: 100%;
+  font-size: 2em;
+ 
+}
+h1 {
+  font-size: 2rem;
+  size: 300px;
+  background-color: white;
+  opacity: 100%;
+  color:black;
+  
+  
+  
+  
+}
+h2 {
+  font-size: 5em;
+}
+
+h3 {
+  font-size: 6em;
+}
+
+h4 {
+  font-size: 3em;
+}
+
+/* TODOS LOS PARRAFOS DE ARRIBA ESTAN CON UN FONDO NEGRO */
+/* efecto maquina de escribir*/
+
+
+
+body { 
+	font-family: monospace; 
+	background: rgb(255, 255, 255);
+}
+.contenedor {
+	margin: auto;
+	display: table;
+}
+
+h1 { 
+	position: relative; 
+	float: left;
+	background: rgb(255, 255, 255);
+	color: #000000;
+	font-size: 2.5em;
+  
+}
+
+h1 span {
+    position:absolute;
+    right:0;
+    width:0;
+    background: rgb(255, 255, 255);
+    border-left: 1px solid rgb(0, 0, 0);
+    animation: escribir 4s steps(30) infinite alternate;
+}
+
+@keyframes escribir {
+    from { width: 100% }
+    to { width:0 }
+}
+
+/* planes precios*/
+
+/* Estilos para la sección de planes */
+.pricing-section {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* Estilos para el encabezado */
+.pricing-section h2 {
+  font-size: 3em;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Estilos para la tabla de planes */
+.pricing-table {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Estilos para cada plan */
+.pricing-plan {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+}
+
+/* Estilos para el nombre del plan */
+.pricing-plan h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Estilos para el precio */
+.pricing-plan .price {
+  font-size: 2em;
+  font-weight: bold;
+  color: #8c48cc; /* Puedes cambiar el color del precio */
+  margin-bottom: 20px;
+}
+
+/* Estilos para la lista de características */
+.pricing-plan ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+/* Estilos para cada característica */
+.pricing-plan li {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+/* Estilos para el botón de compra */
+.pricing-plan button {
+  background-color: #8c48cc; /* Puedes cambiar el color del botón */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilos para el botón al pasar el ratón */
+.pricing-plan button:hover {
+  background-color: #5e388e; /* Puedes cambiar el color al pasar el ratón */
+}
+
+

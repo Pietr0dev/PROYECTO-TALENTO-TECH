@@ -1,2 +1,2 @@
-# PROYECTO-TALENTO-TECH
- 
+# PROYECTO-TALENTO-TECH 
+Este proyecto fue creado como manera de ejercicio en el curso de talento tech usando las tecnologias de html y css.
