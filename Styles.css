@@ -119,7 +119,7 @@ nav a:hover {
 
 button {
   /* Estilos para el botón */
-  background-color: #8c48cc;
+  background-color: #f8f7f8;
   /* Nuevo color de fondo naranja */
   border: none;
   color: rgb(8, 8, 8);
@@ -133,9 +133,11 @@ button {
   cursor: pointer;
   text-align: center; /* Centrar el texto del botón */
   font-family: 'Roboto', sans-serif; /* Agrega Roboto como la familia de fuente */
+ 
+
 }
 
-button:hover {
+button:hover { 
   /* Estilos al pasar el ratón por encima */
   background-color: #8c48cc;
   /* Color de fondo más oscuro */
@@ -174,26 +176,40 @@ button:hover {
 }
 
 
-p {
-  background-color: black;
-  color: white;
-  opacity: 100%;
-  font-size: 2em;
- 
-}
+
 h1 {
   font-size: 2rem;
   size: 300px;
   background-color: white;
   opacity: 100%;
   color:black;
+
   
   
   
   
 }
+
+/* ... (tus estilos anteriores) ... */
+
+/* Estilo para el párrafo de la portada */
+#home .home-paragraph {
+  background-color: black; /* Quita el fondo negro con transparent quita el fondocon TRANSPARENTt quita el fondo */ 
+  color: white; /* Mantiene el color del texto */
+  opacity: 100%; /* Opacidad del texto */
+  font-size: 2em; /* Tamaño de fuente del texto */
+}
+
+
+/* ... (tus estilos restantes) ... */
+
 h2 {
   font-size: 5em;
+  background-color: #5e388e;
+  size:200px;
+  opacity:100%
+  color:white
+  align-content:center
 }
 
 h3 {
@@ -323,3 +339,77 @@ h1 span {
 }
 
 
+
+
+
+/* Estilo para las cards*/
+
+
+/* Estilos para la sección de servicios */
+.services {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Estilos para el contenedor de las tarjetas */
+.cards {
+  display: flex; 
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en varias filas si es necesario */
+  justify-content: center; /* Alinea las tarjetas al centro */
+  gap: 20px; /* Espacio entre las tarjetas */
+}
+
+/* Estilos para cada tarjeta */
+.card {
+  background-color: #f2f2f2; /* Color de fondo para las tarjetas */
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 0 300px; /* Ancho mínimo de 300px para las tarjetas */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+  text-align: left; /* Alinea el texto a la izquierda */
+  position: relative; /* Para posicionar la imagen */
+}
+
+/* Estilos para la imagen dentro de la tarjeta */
+.card img {
+  width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+  height: auto; /* La altura se ajusta automáticamente para mantener las proporciones */
+  border-radius: 10px 10px 0 0; /* Redondea las esquinas superiores de la imagen */
+  display: block; /* Evita que la imagen sobresalga del contenedor */
+}
+
+/* Estilos para el título de cada tarjeta */
+.card h3 {
+  color: #8c48cc; /* Color del título */
+  margin-bottom: 10px;
+  margin-top: 10px; /* Espacio entre la imagen y el título */
+}
+
+/* Estilos para el contenido de cada tarjeta */
+.card p {
+  line-height: 1.5; /* Espacio entre las líneas del texto */
+}
+
+/* Estilos responsivos (para pantallas pequeñas) */
+@media (max-width: 768px) {
+  .card {
+      flex: 1 0 100%; /* Ancho de 100% para cada tarjeta en pantallas pequeñas */
+  }
+}
+
+/* Estilos para el botón "Agregar al carrito" */
+.add-to-cart {
+  background-color: #8c48cc; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  padding: 10px 20px; /* Espacio alrededor del texto */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 5px; /* Redondea las esquinas del botón */
+  cursor: pointer; /* Cambia el cursor a una mano al pasar el ratón */
+  display: block; /* El botón ocupa todo el ancho de la tarjeta */
+  margin-top: 10px; /* Espacio entre el contenido y el botón */
+  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+.add-to-cart:hover {
+  background-color: #6c3483; /* Color de fondo al pasar el ratón por encima */
+}
