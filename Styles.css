@@ -223,11 +223,13 @@ h4 {
 /* TODOS LOS PARRAFOS DE ARRIBA ESTAN CON UN FONDO NEGRO */
 /* efecto maquina de escribir*/
 
-
+h2 .Ns= {
+  font: size 200px;
+}
 
 body { 
 	font-family: monospace; 
-	background: rgb(255, 255, 255);
+	background: rgb(250, 223, 253);
 }
 .contenedor {
 	margin: auto;
@@ -361,8 +363,8 @@ h1 span {
 
 /* Estilos para cada tarjeta */
 .card {
-  background-color: #f2f2f2; /* Color de fondo para las tarjetas */
-  padding: 20px;
+  background-color: #d7aefd; /* Color de fondo para las tarjetas */
+  padding: 18px;
   border-radius: 10px;
   flex: 1 0 300px; /* Ancho mínimo de 300px para las tarjetas */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
@@ -399,7 +401,7 @@ h1 span {
 
 /* Estilos para el botón "Agregar al carrito" */
 .add-to-cart {
-  background-color: #8c48cc; /* Color de fondo del botón */
+  background-color: #6c3483; /* Color de fondo del botón */
   color: white; /* Color del texto del botón */
   padding: 10px 20px; /* Espacio alrededor del texto */
   border: none; /* Elimina el borde del botón */
@@ -411,5 +413,9 @@ h1 span {
 }
 
 .add-to-cart:hover {
-  background-color: #6c3483; /* Color de fondo al pasar el ratón por encima */
+  background-color: #8c48cc; /* Color de fondo al pasar el ratón por encima */
 }
+
+
+
+
