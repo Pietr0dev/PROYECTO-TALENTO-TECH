@@ -110,7 +110,7 @@ nav a {
   /* Texto blanco */
   text-decoration: none;
   /* Quita el subrayado */
-  font-family: 'Roboto', sans-serif; /* Agrega Roboto como la familia de fuente */
+  font-family: 'Roboto', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Agrega Roboto como la familia de fuente */
 }
 
 nav a:hover {
@@ -207,27 +207,29 @@ h1 {
 /* ... (tus estilos restantes) ... */
 
 h2 {
+  color: rgb(255, 255, 255);
   font-size: 5em;
   background-color: #5e388e;
   size:200px;
   opacity:100%
   color:white;
   padding: 12px;
+  font-family:Impact,
   
 }
 
 h3 {
-  font-size: 6em;
+  font-size: 3em;
 }
 
 h4 {
-  font-size: 3em;
+  font-size: 22em;
 }
 
 /* TODOS LOS PARRAFOS DE ARRIBA ESTAN CON UN FONDO NEGRO */
 /* efecto maquina de escribir*/
 
-
+#home .
 
 body { 
 	font-family: monospace; 
@@ -236,6 +238,7 @@ body {
 .contenedor {
 	margin: auto;
 	display: table;
+  size: 20px;
 }
 
 h1 { 
@@ -369,7 +372,9 @@ h1 span {
 .card {
   background-color: #d7aefd; /* Color de fondo para las tarjetas */
   padding: 18px;
-  border-radius: 10px;
+  padding:top 20px;
+  padding-butom:220px
+  border-radius: 121px;
   flex: 1 0 300px; /* Ancho mínimo de 300px para las tarjetas */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
   text-align: left; /* Alinea el texto a la izquierda */
@@ -381,7 +386,7 @@ h1 span {
   width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
   height: auto; /* La altura se ajusta automáticamente para mantener las proporciones */
   border-radius: 10px 10px 0 0; /* Redondea las esquinas superiores de la imagen */
-  display: block; /* Evita que la imagen sobresalga del contenedor */
+  display: relative; /* Evita que la imagen sobresalga del contenedor */
 }
 
 /* Estilos para el título de cada tarjeta */
@@ -407,17 +412,23 @@ h1 span {
 .add-to-cart {
   background-color: #6c3483; /* Color de fondo del botón */
   color: white; /* Color del texto del botón */
-  padding: 10px 20px; /* Espacio alrededor del texto */
+  padding: 13px 31px; /* Espacio alrededor del texto */
   border: none; /* Elimina el borde del botón */
   border-radius: 5px; /* Redondea las esquinas del botón */
   cursor: pointer; /* Cambia el cursor a una mano al pasar el ratón */
-  display: block; /* El botón ocupa todo el ancho de la tarjeta */
+  display: right; /* El botón ocupa todo el ancho de la tarjeta */
   margin-top: 10px; /* Espacio entre el contenido y el botón */
+  margin-left:230px;
   transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
-}
-
-.add-to-cart:hover {
-  background-color: #8c48cc; /* Color de fondo al pasar el ratón por encima */
+  /* Centrado del botón */
+  text-align: center; /* Centra el texto dentro del botón */
+  margin: 0 auto; /* Margen automático izquierdo y derecho para centrar horizontalmente */
+  display: flex; /* Habilita flexbox para la alineación vertical */
+  align-items: right; /* Centra el botón verticalmente */
+  justify-content: right;
+   /* Centra el botón horizontalmente */
+  align-content: center;
+  
 }
 
 
@@ -426,4 +437,16 @@ h1 span {
   padding: 20px;
   color: #fafafa;
 }
+
+#pricing .pricing-section
+ { color: #d7aefd;
+
+ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+  background-color: #dabbf7;
+  color:#ffffff
+
+  
+}  
+
+
 
