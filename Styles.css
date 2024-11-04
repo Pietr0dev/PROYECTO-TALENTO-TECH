@@ -178,11 +178,12 @@ button:hover {
 
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   size: 300px;
   background-color: white;
   opacity: 100%;
   color:black;
+  padding: 20px; 
 
   
   
@@ -198,6 +199,8 @@ h1 {
   color: white; /* Mantiene el color del texto */
   opacity: 100%; /* Opacidad del texto */
   font-size: 2em; /* Tamaño de fuente del texto */
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 14px;
 }
 
 
@@ -208,8 +211,9 @@ h2 {
   background-color: #5e388e;
   size:200px;
   opacity:100%
-  color:white
-  align-content:center
+  color:white;
+  padding: 12px;
+  
 }
 
 h3 {
@@ -236,10 +240,11 @@ body {
 
 h1 { 
 	position: relative; 
-	float: left;
+	float: center;
 	background: rgb(250, 223, 253);
 	color: #000000;
-	font-size: 2.5em;
+	font-size: 2em
+  
   
 }
 
@@ -349,6 +354,7 @@ h1 span {
 .services {
   text-align: center;
   padding: 20px;
+  background-color: f4f4f4;
 }
 
 /* Estilos para el contenedor de las tarjetas */
@@ -415,7 +421,9 @@ h1 span {
 }
 
 
-.descubrir:hover{
- background-color: #8c48cc; 
+#contact {
+  text-align: center;
+  padding: 20px;
+  color: #fafafa;
 }
 
