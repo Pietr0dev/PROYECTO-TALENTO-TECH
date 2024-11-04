@@ -237,7 +237,7 @@ body {
 h1 { 
 	position: relative; 
 	float: left;
-	background: rgb(255, 255, 255);
+	background: rgb(250, 223, 253);
 	color: #000000;
 	font-size: 2.5em;
   
@@ -247,7 +247,7 @@ h1 span {
     position:absolute;
     right:0;
     width:0;
-    background: rgb(255, 255, 255);
+    background: rgb(250, 223, 253);
     border-left: 1px solid rgb(0, 0, 0);
     animation: escribir 4s steps(30) infinite alternate;
 }
