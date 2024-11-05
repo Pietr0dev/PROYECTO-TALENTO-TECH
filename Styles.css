@@ -21,7 +21,7 @@
 
 
 #home {
-  height: 500px;
+  height: 600px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -77,7 +77,7 @@
 /* nav bar
 /* Estilos para la barra de navegación */
 nav {
-  background-color: rgba(26, 26, 26, 0.897);
+  background-color: #781edf;
   /* Fondo negro */
   color: white;
   /* Texto blanco */
@@ -110,19 +110,20 @@ nav a {
   /* Texto blanco */
   text-decoration: none;
   /* Quita el subrayado */
-  font-family: 'Roboto', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Agrega Roboto como la familia de fuente */
+  font-family:'roboto'; '  text-align: center; /* Centrar el texto de la barra de navegación */
+  text-decoration-color: 22px; border:22 padding: ;;;
 }
 
 nav a:hover {
-  color: #8c48cc;
+  color: #00ff15;
 }
 
 button {
   /* Estilos para el botón */
-  background-color: #f8f7f8;
+  background-color: #ffffffee;
   /* Nuevo color de fondo naranja */
   border: none;
-  color: rgb(8, 8, 8);
+  color: rgb(0, 0, 0);
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -139,7 +140,9 @@ button {
 
 button:hover { 
   /* Estilos al pasar el ratón por encima */
-  background-color: #8c48cc;
+  background-color: #33ff00;
+  color:#000000;
+  font-family: 'Roboto', sans-serif';
   /* Color de fondo más oscuro */
 }
 
@@ -196,10 +199,10 @@ h1 {
 /* Estilo para el párrafo de la portada */
 #home .home-paragraph {
   background-color: black; /* Quita el fondo negro con transparent quita el fondocon TRANSPARENTt quita el fondo */ 
-  color: white; /* Mantiene el color del texto */
+  color: rgb(255, 255, 255); /* Mantiene el color del texto */
   opacity: 100%; /* Opacidad del texto */
   font-size: 2em; /* Tamaño de fuente del texto */
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family:'Roboto';
   padding: 14px;
 }
 
@@ -214,7 +217,7 @@ h2 {
   opacity:100%
   color:white;
   padding: 12px;
-  font-family:Impact,
+  font-family:'Roboto';
   
 }
 
@@ -232,8 +235,9 @@ h4 {
 #home .
 
 body { 
-	font-family: monospace; 
-	background: rgb(250, 223, 253);
+	font-family: "roboto"; 
+	background: rgb(223, 253, 229);
+  color:rgb(0, 0, 0)
 }
 .contenedor {
 	margin: auto;
@@ -241,22 +245,31 @@ body {
   size: 20px;
 }
 
+
 h1 { 
 	position: relative; 
 	float: center;
-	background: rgb(250, 223, 253);
+	background: rgba(121, 37, 199, 0.705);
 	color: #000000;
 	font-size: 2em
   
   
 }
 
+h2 {
+  position: relative; 
+	float: center;
+	background: #781edf;;
+	color: #ffffff;
+	font-size: 2em
+}
+
 h1 span {
     position:absolute;
     right:0;
     width:0;
-    background: rgb(250, 223, 253);
-    border-left: 1px solid rgb(0, 0, 0);
+    background: rgba(121, 37, 199, 0.705);
+    border-left: 3px solid rgb(0, 255, 13);
     animation: escribir 4s steps(30) infinite alternate;
 }
 
@@ -312,7 +325,7 @@ h1 span {
 .pricing-plan .price {
   font-size: 2em;
   font-weight: bold;
-  color: #8c48cc; /* Puedes cambiar el color del precio */
+  color: #15ff00; /* Puedes cambiar el color del precio */
   margin-bottom: 20px;
 }
 
@@ -343,7 +356,7 @@ h1 span {
 
 /* Estilos para el botón al pasar el ratón */
 .pricing-plan button:hover {
-  background-color: #5e388e; /* Puedes cambiar el color al pasar el ratón */
+  background-color: #00ff15; /* Puedes cambiar el color al pasar el ratón */
 }
 
 
@@ -357,7 +370,7 @@ h1 span {
 .services {
   text-align: center;
   padding: 20px;
-  background-color: f4f4f4;
+  background-color: 781edf;
 }
 
 /* Estilos para el contenedor de las tarjetas */
@@ -370,7 +383,7 @@ h1 span {
 
 /* Estilos para cada tarjeta */
 .card {
-  background-color: #d7aefd; /* Color de fondo para las tarjetas */
+  background-color: #dcc7f3; /* Color de fondo para las tarjetas */
   padding: 18px;
   padding:top 20px;
   padding-butom:220px
@@ -410,8 +423,8 @@ h1 span {
 
 /* Estilos para el botón "Agregar al carrito" */
 .add-to-cart {
-  background-color: #6c3483; /* Color de fondo del botón */
-  color: white; /* Color del texto del botón */
+  background-color: #8d26b6; /* Color de fondo del botón */
+  color: rgb(255, 255, 255); /* Color del texto del botón */
   padding: 13px 31px; /* Espacio alrededor del texto */
   border: none; /* Elimina el borde del botón */
   border-radius: 5px; /* Redondea las esquinas del botón */
@@ -431,22 +444,30 @@ h1 span {
   
 }
 
+.h2 {
+  background-color: #ff0095;
+  color:#15ff00
+}  
 
 #contact {
   text-align: center;
   padding: 20px;
   color: #fafafa;
+  background-color: #781edf;
 }
 
 #pricing .pricing-section
- { color: #d7aefd;
+ { color: #00ff62;
 
- font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-  background-color: #dabbf7;
-  color:#ffffff
+ font-family:'roboto';
+  background-color: #000000;
+  color:#000000
 
   
 }  
+
+
+
 
 
 
