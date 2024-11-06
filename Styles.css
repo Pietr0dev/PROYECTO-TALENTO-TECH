@@ -249,7 +249,7 @@ body {
 h1 { 
 	position: relative; 
 	float: center;
-	background: rgba(121, 37, 199, 0.705);
+	background: #781edf;
 	color: #000000;
 	font-size: 2em
   
@@ -261,14 +261,14 @@ h2 {
 	float: center;
 	background: #781edf;;
 	color: #ffffff;
-	font-size: 2em
+	font-size: 4em
 }
 
 h1 span {
     position:absolute;
     right:0;
     width:0;
-    background: rgba(121, 37, 199, 0.705);
+    background: #781edf;
     border-left: 3px solid rgb(0, 255, 13);
     animation: escribir 4s steps(30) infinite alternate;
 }
