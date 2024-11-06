@@ -1,8 +1,9 @@
 #home {
   width: 100%;
   height: 500px;
-  opacity: 500%;
+  opacity: 100%;
   background-image: url('https://img.freepik.com/psd-gratis/mockup-vista-superior-disenador-grafico-portatil_23-2147675736.jpg?t=st=1730410809~exp=1730414409~hmac=754d8fb910a8765fad85d7760433d5d02505f08ab3d49663f0b49ec2d3586d2d&w=1380');
+  filter:brightness(56%);
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -146,6 +147,12 @@ button:hover {
   /* Color de fondo más oscuro */
 }
 
+#home:hover {
+  filter: brightness(70%);
+  transition-delay: 12ms;
+  transition-duration: 1000ms;
+}
+
 /* Estilos para dispositivos móviles (ancho de pantalla menor a 768px) */
 @media (max-width: 768px) {
   #home {
@@ -183,11 +190,11 @@ button:hover {
 h1 {
   font-size: 3rem;
   size: 300px;
-  background-color: white;
+  background-color: none;
   opacity: 100%;
-  color:black;
+  color:rgb(0, 0, 0);
   padding: 20px; 
-
+  
   
   
   
@@ -198,12 +205,12 @@ h1 {
 
 /* Estilo para el párrafo de la portada */
 #home .home-paragraph {
-  background-color: black; /* Quita el fondo negro con transparent quita el fondocon TRANSPARENTt quita el fondo */ 
+  background-color: none; /* Quita el fondo negro con transparent quita el fondocon TRANSPARENTt quita el fondo */ 
   color: rgb(255, 255, 255); /* Mantiene el color del texto */
   opacity: 100%; /* Opacidad del texto */
   font-size: 2em; /* Tamaño de fuente del texto */
   font-family:'Roboto';
-  padding: 14px;
+  padding: 0px;
 }
 
 
@@ -249,12 +256,21 @@ body {
 h1 { 
 	position: relative; 
 	float: center;
-	background: #781edf;
-	color: #000000;
+	background: #none;
+	color: #black;
 	font-size: 2em
   
   
 }
+
+h3 {
+  align-content: flex-start;
+  position: relative;
+  float: center;
+  padding-left: 16%;
+  
+}
+
 
 h2 {
   position: relative; 
@@ -382,6 +398,17 @@ h1 span {
 }
 
 /* Estilos para cada tarjeta */
+
+.card:hover {
+  filter: brightness(99%);
+  transition-delay: 12ms;
+  transition-duration: 1000ms;
+  backdrop-filter: 200px;
+  background-color: #32115e;
+  color:white;
+  mark:20px;
+}
+
 .card {
   background-color: #dcc7f3; /* Color de fondo para las tarjetas */
   padding: 18px;
