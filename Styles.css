@@ -85,7 +85,7 @@ nav a {
   /* Texto blanco */
   text-decoration: none;
   /* Quita el subrayado */
-  font-family:'roboto'; '  text-align: center; /* Centrar el texto de la barra de navegación */
+  font-family:'roboto'; text-align: center; /* Centrar el texto de la barra de navegación */
   text-decoration-color: 22px; border:22 padding: ;;;
 }
 
@@ -281,8 +281,8 @@ body {
 h1 { 
 	position: relative; 
 	float: center;
-	background: #none;
-	color: #black;
+	background: none;
+	color:rgb(0, 0, 0);
 	font-size: 2em
   
   
@@ -439,7 +439,7 @@ h1 span {
   padding: 18px;
   padding:top 20px;
   padding-bottom:220px
-  border-radius: 121px;
+  border-radius; 121px;
   flex: 1 0 300px; /* Ancho mínimo de 300px para las tarjetas */
   box-shadow: 0 4px 8px; rgba(0,0,0,0.1); /* Sombra suave */
   text-align: left; /* Alinea el texto a la izquierda */
