@@ -1,8 +1,9 @@
 #home {
   width: 100%;
   height: 500px;
-  opacity: 500%;
+  opacity: 100%;
   background-image: url('https://img.freepik.com/psd-gratis/mockup-vista-superior-disenador-grafico-portatil_23-2147675736.jpg?t=st=1730410809~exp=1730414409~hmac=754d8fb910a8765fad85d7760433d5d02505f08ab3d49663f0b49ec2d3586d2d&w=1380');
+  filter:brightness(56%);
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,7 +22,7 @@
 
 
 #home {
-  height: 500px;
+  height: 600px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -30,33 +31,7 @@
   flex-direction: column
 }
 
-#home::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 13%;
 
-  background-size: cover;
-  background-position: center;
-  z-index: 1;
-}
-
-/* Agregar una capa atenuada */
-#home::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(39, 39, 39, 0.11);
-  /* Color grisáceo con opacidad. */
-  z-index: 2;
-  /* Está encima de la imagen, pero detrás del texto. */
-}
 
 .hero {
   position: relative;
@@ -77,7 +52,7 @@
 /* nav bar
 /* Estilos para la barra de navegación */
 nav {
-  background-color: rgba(26, 26, 26, 0.897);
+  background-color: #781edf;
   /* Fondo negro */
   color: white;
   /* Texto blanco */
@@ -110,19 +85,20 @@ nav a {
   /* Texto blanco */
   text-decoration: none;
   /* Quita el subrayado */
-  font-family: 'Roboto', sans-serif; /* Agrega Roboto como la familia de fuente */
+  font-family:'roboto'; text-align: center; /* Centrar el texto de la barra de navegación */
+  text-decoration-color: 22px; border:22 padding: ;;;
 }
 
 nav a:hover {
-  color: #8c48cc;
+  color: #00ff15;
 }
 
 button {
   /* Estilos para el botón */
-  background-color: #8c48cc;
+  background-color: #ffffffee;
   /* Nuevo color de fondo naranja */
   border: none;
-  color: rgb(8, 8, 8);
+  color: rgb(0, 0, 0);
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -133,12 +109,25 @@ button {
   cursor: pointer;
   text-align: center; /* Centrar el texto del botón */
   font-family: 'Roboto', sans-serif; /* Agrega Roboto como la familia de fuente */
+ 
+
 }
 
-button:hover {
+
+
+
+ button:hover { 
   /* Estilos al pasar el ratón por encima */
-  background-color: #8c48cc;
+  background-color: #00ff22;
+  color:#000000;
+  font-family: 'Roboto', sans-serif'; 
   /* Color de fondo más oscuro */
+}
+
+#home:hover {
+  filter: brightness(70%);
+  transition-delay: 12ms;
+  transition-duration: 1000ms;
 }
 
 /* Estilos para dispositivos móviles (ancho de pantalla menor a 768px) */
@@ -173,66 +162,155 @@ button:hover {
   background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
+/* Estilos para la sección del home */
+#home {
+  width: 100%;
+  height: 500px;
+  background-image: url('https://img.freepik.com/foto-gratis/manos-empresarios-mesa-madera-documentos-borradores_176420-372.jpg?t=st=1729639025~exp=1729642625~hmac=0c922265790e7d34988ffdecb6c3a65ca44aea0193b79a1ede02d210b8bed2c9&w=1380');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+/* Estilos para el contenido de la sección del home */
+.home-content {
+  position: relative;
+  z-index: 2;
+  color: white; /* Color del texto */
+  text-align: center;
+  padding: 0 20px; /* Espacio alrededor del texto */
+}
+/* Estilos para el título del home */
+#home h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+/* Estilos para el párrafo del home */
+#home p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  #home {
+    height: auto; /* La altura del contenedor se ajusta automáticamente */
+    padding: 20px; /* Espacio alrededor del contenido */
+  }
+  #home h1 {
+    font-size: 1.8rem; /* Se reduce el tamaño de fuente */
+  }
+  #home p {
+    font-size: 1rem; /* Se reduce el tamaño de fuente */
+  }
+  .home-content {
+    padding: 10px; /* Espacio alrededor del texto en dispositivos móviles */
+  }
+}
 
-p {
-  background-color: black;
-  color: white;
-  opacity: 100%;
-  font-size: 2em;
- 
-}
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   size: 300px;
-  background-color: white;
+  background-color: none;
   opacity: 100%;
-  color:black;
+  color:rgb(0, 0, 0);
+  padding: 20px; 
+  
   
   
   
   
 }
+
+
+
+/* Estilo para el párrafo de la portada */
+#home .home-paragraph {
+  background-color: black; /* Quita el fondo negro con transparent quita el fondocon TRANSPARENTt quita el fondo */ 
+  color: rgb(21, 255, 0); /* Mantiene el color del texto */
+  opacity: 100%; /* Opacidad del texto */
+  font-size: 2em; /* Tamaño de fuente del texto */
+  font-family:'Roboto';
+  padding: 0px;
+  
+}
+
+
+/* ... (tus estilos restantes) ... */
+
 h2 {
+  color: rgb(255, 255, 255);
   font-size: 5em;
+  background-color: rgb(94, 56, 142);
+  size:200px;
+  opacity:100%
+  color:white;
+  padding: 12px;
+  font-family:'Roboto';
+  
 }
 
 h3 {
-  font-size: 6em;
+  font-size: 3em;
 }
 
 h4 {
-  font-size: 3em;
+  font-size: 22em;
 }
 
 /* TODOS LOS PARRAFOS DE ARRIBA ESTAN CON UN FONDO NEGRO */
 /* efecto maquina de escribir*/
 
-
+#home .
 
 body { 
-	font-family: monospace; 
-	background: rgb(255, 255, 255);
+	font-family: "roboto"; 
+	background: rgb(223, 253, 229);
+  color:rgb(0, 0, 0)
 }
 .contenedor {
 	margin: auto;
 	display: table;
+  size: 20px;
 }
+
 
 h1 { 
 	position: relative; 
-	float: left;
-	background: rgb(255, 255, 255);
-	color: #000000;
-	font-size: 2.5em;
+	float: center;
+	background: none;
+	color:rgb(0, 0, 0);
+	font-size: 2em
   
+  
+}
+
+h3 {
+  align-content: flex-start;
+  position: relative;
+  float: center;
+  padding-left: 16%;
+  
+}
+
+
+h2 {
+  position: relative; 
+	float: center;
+	background: rgb(120, 30, 223);;
+	color: #ffffff;
+	font-size: 4em
 }
 
 h1 span {
     position:absolute;
     right:0;
     width:0;
-    background: rgb(255, 255, 255);
-    border-left: 1px solid rgb(0, 0, 0);
+    background: rgb(120, 30, 223);
+    border-left: 3px solid rgb(0, 255, 13);
     animation: escribir 4s steps(30) infinite alternate;
 }
 
@@ -254,7 +332,7 @@ h1 span {
 .pricing-section h2 {
   font-size: 3em;
   margin-bottom: 30px;
-  color: #333;
+  color: #ffffff;
 }
 
 /* Estilos para la tabla de planes */
@@ -288,7 +366,7 @@ h1 span {
 .pricing-plan .price {
   font-size: 2em;
   font-weight: bold;
-  color: #8c48cc; /* Puedes cambiar el color del precio */
+  color: #15ff00; /* Puedes cambiar el color del precio */
   margin-bottom: 20px;
 }
 
@@ -319,7 +397,129 @@ h1 span {
 
 /* Estilos para el botón al pasar el ratón */
 .pricing-plan button:hover {
-  background-color: #5e388e; /* Puedes cambiar el color al pasar el ratón */
+  background-color: #00ff15; /* Puedes cambiar el color al pasar el ratón */
 }
+
+
+
+
+
+/* Estilo para las cards*/
+
+
+/* Estilos para la sección de servicios */
+.services {
+  text-align: center;
+  padding: 20px;
+  background-color: 781edf;
+}
+
+/* Estilos para el contenedor de las tarjetas */
+.cards {
+  display: flex; 
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en varias filas si es necesario */
+  justify-content: center; /* Alinea las tarjetas al centro */
+  gap: 20px; /* Espacio entre las tarjetas */
+}
+
+/* Estilos para cada tarjeta */
+
+.card:hover {
+  filter: brightness(99%);
+  transition-delay: 12ms;
+  transition-duration: 1000ms;
+  backdrop-filter: 200px;
+  background-color: #32115e;
+  color:white;
+  mark:20px;
+}
+
+.card {
+  background-color: #dcc7f3; /* Color de fondo para las tarjetas */
+  padding: 18px;
+  padding:top 20px;
+  padding-bottom:220px
+  border-radius; 121px;
+  flex: 1 0 300px; /* Ancho mínimo de 300px para las tarjetas */
+  box-shadow: 0 4px 8px; rgba(0,0,0,0.1); /* Sombra suave */
+  text-align: left; /* Alinea el texto a la izquierda */
+  position: relative; /* Para posicionar la imagen */
+}
+
+/* Estilos para la imagen dentro de la tarjeta */
+.card img {
+  width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+  height: auto; /* La altura se ajusta automáticamente para mantener las proporciones */
+  border-radius: 10px 10px 0 0; /* Redondea las esquinas superiores de la imagen */
+  display: relative; /* Evita que la imagen sobresalga del contenedor */
+}
+
+/* Estilos para el título de cada tarjeta */
+.card h3 {
+  color: #8c48cc; /* Color del título */
+  margin-bottom: 10px;
+  margin-top: 10px; /* Espacio entre la imagen y el título */
+}
+
+/* Estilos para el contenido de cada tarjeta */
+.card p {
+  line-height: 1.5; /* Espacio entre las líneas del texto */
+}
+
+/* Estilos responsivos (para pantallas pequeñas) */
+@media (max-width: 768px) {
+  .card {
+      flex: 1 0 100%; /* Ancho de 100% para cada tarjeta en pantallas pequeñas */
+  }
+}
+
+/* Estilos para el botón "Agregar al carrito" */
+.add-to-cart {
+  background-color: #8d26b6; /* Color de fondo del botón */
+  color: rgb(255, 255, 255); /* Color del texto del botón */
+  padding: 13px 31px; /* Espacio alrededor del texto */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 5px; /* Redondea las esquinas del botón */
+  cursor: pointer; /* Cambia el cursor a una mano al pasar el ratón */
+  display: right; /* El botón ocupa todo el ancho de la tarjeta */
+  margin-top: 10px; /* Espacio entre el contenido y el botón */
+  margin-left:230px;
+  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+  /* Centrado del botón */
+  text-align: center; /* Centra el texto dentro del botón */
+  margin: 0 auto; /* Margen automático izquierdo y derecho para centrar horizontalmente */
+  display: flex; /* Habilita flexbox para la alineación vertical */
+  align-items: right; /* Centra el botón verticalmente */
+  justify-content: right;
+   /* Centra el botón horizontalmente */
+  align-content: center;
+  
+}
+
+.h2 {
+  background-color: #ff0095;
+  color:#15ff00
+}  
+
+#contact {
+  text-align: center;
+  padding: 20px;
+  color: #fafafa;
+  background-color: #781edf;
+}
+
+#pricing .pricing-section
+ { color: #00ff62;
+
+ font-family:'roboto';
+  background-color: #000000;
+  color:#000000
+
+  
+}  
+
+
+
+
 
 

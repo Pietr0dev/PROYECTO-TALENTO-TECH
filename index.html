@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Styles.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    
     <title>Agencia de Marketing</title>
 </head>
 <body>
@@ -26,28 +27,50 @@
 
     <!-- Home section -->
     <section id="home" class="hero">
-        <h1>Transformamos ideas en estrategias que conectan marcas con personas.</h1>
-        <p>Impulsa tu marca con soluciones creativas y efectivas en marketing, diseño y publicidad.</p>
+        <h1><STRONG>TRANSFORMAMOS IDEAS EN ESTRATEGIAS QUE CONECTAN MARCAS CON PERSONAS.</STRONG></h1>
+        <p class="home-paragraph"> <STRONG>IMPULSÁ TU MARCA CON SOLUCIONES CREATIVAS Y EFECTIVAS EN MARKETING, DISEÑO Y PUBLICIDAD.</STRONG></p>
         <a href="#services" class="cta"></a>
-        <button>Descubre más</button>
+        <button id="desc"> descubre más </button> 
     </section>
 
-    <!-- Servicios Destacados -->
-    <section class="services-highlights">
+
+
+
+
+
+    <!--agregar un boton de agregar al carrito-->
+
+    <section id="services" class="services">
         <h2>Nuestros Servicios</h2>
-        <div class="service">
-            <h3>Marketing Digital</h3>
-            <p>Potenciamos tu marca en redes sociales y motores de búsqueda.</p>
-        </div>
-        <div class="service">
-            <h3>Diseño Gráfico</h3>
-            <p>Creamos identidades visuales memorables que comunican tu esencia.</p>
-        </div>
-        <div class="service">
-            <h3>Publicidad</h3>
-            <p>Estrategias publicitarias que generan resultados medibles.</p>
+        <div class="cards">
+            <div class="card">
+                <img src="https://www.fulllife.com.mx/wp-content/uploads/2023/06/nota_2_desktop_signos-de-felicidad_feb_image.jpg" alt="Marketing Digital">
+                <h3>Marketing digital</h3>
+                <p>Con nuestras estrategias de marketing digital, tu marca logrará destacar entre la competencia. Implementamos campañas en redes sociales, SEO, Google Ads y más para generar resultados que impulsan tu negocio.</p>
+                <button class="add-to-cart">Agregar al carrito</button> </div>
+            <div class="card">
+                <img src="https://www.fulllife.com.mx/wp-content/uploads/2023/06/nota_2_desktop_signos-de-felicidad_feb_image.jpg" alt="Diseño Gráfico">
+                <h3>Diseño Gráfico</h3>
+                <p>Desarrollamos identidades visuales que comunican la esencia de tu marca. Desde logotipos hasta material promocional, nuestro equipo de diseño crea piezas que atraen y convencen.</p>
+                <button class="add-to-cart">Agregar al carrito</button> </div>
+            <div class="card">
+                <img src="https://www.fulllife.com.mx/wp-content/uploads/2023/06/nota_2_desktop_signos-de-felicidad_feb_image.jpg" alt="Diseño Web">
+                <h3>Diseño Web y apps</h3>
+                <p>Desarrollamos páginas web modernas, optimizadas y fáciles de navegar, pensadas para ofrecer una experiencia de usuario impecable desde cualquier dispositivo.</p>
+                <button class="add-to-cart">Agregar al carrito</button> </div>
         </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
 
 
     <!-- Sección de planes -->
@@ -72,9 +95,9 @@
                 <h3>Estándar</h3>
                 <div class="price">$25/mes</div>
                 <ul>
-                    <li>Característica 1</li>
-                    <li>Característica 2</li>
-                    <li>Característica 3</li>
+                    <li>3 posteos semanales</li>
+                    <li>3 historias semanales 2</li>
+                    <li>1 campaña de anuncios3</li>
                     <li>Característica 4</li>
                     <li>Característica 5</li>
                 </ul>
@@ -106,9 +129,9 @@
    
 
     <!-- Contacto -->
-    <section id="contact" class="contact">
+    <section id="contact" class="antescontact">
         <h2>Contacto</h2>
-        <p>¿Listo para llevar tu marca al siguiente nivel? Contáctanos hoy mismo.</p>
+        <p>¿Listo para llevar tu marca al siguiente nivel? Contáctanos hoy   mismo.</p>
         <form action="enviar.php" method="post">
             <input type="text" name="nombre" placeholder="Tu nombre" required>
             <input type="email" name="email" placeholder="Tu correo electrónico" required>
@@ -125,6 +148,6 @@
         </div>
     </section>
 
-    <script src="./script.js"></script>
+    
 </body>
 </html>
