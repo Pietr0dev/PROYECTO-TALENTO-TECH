@@ -439,7 +439,7 @@ h1 span {
   padding: 18px;
   padding:top 20px;
   padding-bottom:220px
-  border-radius 121px;
+  border-radius; 121px;
   flex: 1 0 300px; /* Ancho mínimo de 300px para las tarjetas */
   box-shadow: 0 4px 8px; rgba(0,0,0,0.1); /* Sombra suave */
   text-align: left; /* Alinea el texto a la izquierda */
@@ -518,26 +518,6 @@ h1 span {
   
 }  
 
-.cart-dropdown {
-    display: none;
-    position: absolute;
-    top: 50px;
-    right: 20px;
-    background-color: rgb(126, 224, 115);
-    padding: 10px;
-    border: 1px solid #ccc;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.cart-dropdown ul {
-    list-style: none;
-    padding: 0;
-}
-
-.cart-dropdown li {
-    margin-bottom: 5px;
-}
-
 
 
 
@@ -605,28 +585,21 @@ h1 span {
   }
 }
 
-#carritoali {
+.btnLimpiar {
+  border-bottom-color: #781edf;
+  border-bottom: 10px;
+}
+
+.header {
+  background-color: #32115e;
+}
+
+h8 {
   
-  padding-left: 1240px;
+  margin-left: 40px;
+  margin-right:40px;
 }
-
-#menunav {
-align-content:center;
-flex-direction: column;
-position:relative;
-justify-content: center;
-
-}
-
-#carouselExample {
-  font-weight: 100px;
-  height: 11%;
-  align-content: center;
-  flex-direction:column;
- 
-} 
-#carousel-control-prev {
-  height: 30%;
-  scale: 30%;
-  content-visibility: 0%;
+#imagenperrito {
+  width: 3px;
+  height:3px;
 }
