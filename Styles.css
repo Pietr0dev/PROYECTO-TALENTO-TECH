@@ -411,7 +411,7 @@ h1 span {
 .services {
   text-align: center;
   padding: 20px;
-  background-color: 781edf;
+  background-color:#f1f8f2;
 }
 
 /* Estilos para el contenedor de las tarjetas */
@@ -567,7 +567,7 @@ h1 span {
 }
 
 .tarjeta {
-  background-color: #dcc7f3; /* Color de fondo para las tarjetas */
+  background-color: none; /* Color de fondo para las tarjetas */
   padding: 18px;
   padding:top 20px;
   padding-bottom:220px
