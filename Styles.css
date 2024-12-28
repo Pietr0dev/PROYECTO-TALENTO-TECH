@@ -117,18 +117,18 @@ button {
 
 
  button:hover { 
-  /* Estilos al pasar el ratón por encima */
+  /* Estilos al pasar el ratón por encima - botones y slider*/
   background-color: #00ff22;
+
   color:#000000;
-  font-family: 'Roboto', sans-serif'; 
+  font-family: 'Roboto', sans-serif';
+  
+   
   /* Color de fondo más oscuro */
 }
 
-#home:hover {
-  filter: brightness(70%);
-  transition-delay: 12ms;
-  transition-duration: 1000ms;
-}
+
+
 
 /* Estilos para dispositivos móviles (ancho de pantalla menor a 768px) */
 @media (max-width: 768px) {
