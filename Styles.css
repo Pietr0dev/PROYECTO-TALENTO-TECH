@@ -602,14 +602,12 @@ h1 span {
 
 #carritoali {
   
-  padding-left: 1240px;
+  padding-left: 10px;
 }
 
 #menunav {
-align-content:center;
-flex-direction: column;
-position:relative;
-justify-content: center;
+  display:flex; 
+  justify-content: space-between;
 
 }
 
