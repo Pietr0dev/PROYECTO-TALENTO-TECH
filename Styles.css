@@ -598,12 +598,7 @@ h1 span {
   line-height: 1.5; /* Espacio entre las líneas del texto */
 }
 
-/* Estilos responsivos (para pantallas pequeñas) */
-@media (max-width: 768px) {
-  .tarjetas {
-      flex: 1 0 100%; /* Ancho de 100% para cada tarjeta en pantallas pequeñas */
-  }
-}
+
 
 #carritoali {
   
@@ -629,4 +624,11 @@ justify-content: center;
   height: 30%;
   scale: 30%;
   content-visibility: 0%;
+}
+
+/* Estilos responsivos (para pantallas pequeñas) */
+@media (max-width: 768px) {
+  .tarjetas {
+      flex: 1 0 100%; /* Ancho de 100% para cada tarjeta en pantallas pequeñas */
+  }
 }
