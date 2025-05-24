@@ -1,12 +1,5 @@
 #home {
-  width: 100%;
-  height: 500px;
-  opacity: 100%;
-  background-image: url('https://img.freepik.com/psd-gratis/mockup-vista-superior-disenador-grafico-portatil_23-2147675736.jpg?t=st=1730410809~exp=1730414409~hmac=754d8fb910a8765fad85d7760433d5d02505f08ab3d49663f0b49ec2d3586d2d&w=1380');
-  filter:brightness(56%);
-  text-align: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+ 
 
   .home {
     text-align: center;
