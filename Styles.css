@@ -635,10 +635,11 @@ h1 span {
 
 .carousel-control-prev,
 .carousel-control-next {
-  width: 40px; /* o incluso menos */
-  height: 40px;
+  width: 80px; /* o incluso menos */
+  height: 80px;
   top: 50%;
   transform: translateY(-50%);
+  margin: 15px;
 }
 
 .carousel-control-prev-icon,
@@ -650,6 +651,5 @@ h1 span {
 
 .carousel-control-prev,
 .carousel-control-next {
-  top: 50%;
   transform: translateY(-50%);
 }
