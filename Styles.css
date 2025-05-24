@@ -227,16 +227,7 @@ h1 {
 
 
 
-/* Estilo para el párrafo de la portada */
-#home .home-paragraph {
-  background-color: black; /* Quita el fondo negro con transparent quita el fondocon TRANSPARENTt quita el fondo */ 
-  color: rgb(21, 255, 0); /* Mantiene el color del texto */
-  opacity: 100%; /* Opacidad del texto */
-  font-size: 2em; /* Tamaño de fuente del texto */
-  font-family:'Roboto';
-  padding: 0px;
-  
-}
+
 
 
 /* ... (tus estilos restantes) ... */
@@ -439,7 +430,7 @@ h1 span {
   background-color: #dcc7f3; /* Color de fondo para las tarjetas */
   padding: 18px;
   padding:top 20px;
-  padding-bottom:220px
+  padding-bottom:220px;
   border-radius 121px;
   flex: 1 0 300px; /* Ancho mínimo de 300px para las tarjetas */
   box-shadow: 0 4px 8px; rgba(0,0,0,0.1); /* Sombra suave */
