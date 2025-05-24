@@ -79,7 +79,7 @@ nav a {
   text-decoration: none;
   /* Quita el subrayado */
   font-family:'roboto'; text-align: center; /* Centrar el texto de la barra de navegación */
-  text-decoration-color: 22px; border:22 padding: ;;;
+  text-decoration-color: 22px; border:22 padding:;
 }
 
 nav a:hover {
