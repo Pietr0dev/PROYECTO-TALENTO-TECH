@@ -612,13 +612,7 @@ h1 span {
 
 }
 
-#carouselExample {
-  font-weight: 100px;
-  height: 11%;
-  align-content: center;
-  flex-direction:column;
- 
-} 
+
 #carousel-control-prev {
   height: 30%;
   scale: 30%;
@@ -647,6 +641,7 @@ h1 span {
   width: 20px;
   height: 20px;
   background-size: 100% 100%; /* asegura que el ícono no se vea borroso */
+  align-content: center;
 }
 
 .carousel-control-prev,
