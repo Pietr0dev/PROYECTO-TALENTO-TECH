@@ -629,5 +629,21 @@ h1 span {
 @media (max-width: 768px) {
   .tarjetas {
       flex: 1 0 100%; /* Ancho de 100% para cada tarjeta en pantallas pequeñas */
+      
   }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px; /* o incluso menos */
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+  background-size: 100% 100%; /* asegura que el ícono no se vea borroso */
 }
