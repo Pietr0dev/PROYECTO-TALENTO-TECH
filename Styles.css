@@ -647,3 +647,9 @@ h1 span {
   height: 20px;
   background-size: 100% 100%; /* asegura que el ícono no se vea borroso */
 }
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+}
