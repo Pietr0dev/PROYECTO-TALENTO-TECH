@@ -415,94 +415,79 @@ h1 span {
 /* Estilo para las cards*/
 
 
-/* Estilos para la sección de servicios */
-.services {
+/* ...existing code... */
+
+/* Estilos para las cards dentro de la sección Nuestros Servicios */
+.services .card {
+  background-color: #dcc7f3;
+  padding: 18px 18px 60px 18px;
+  border-radius: 40px;
+  flex: 1 0 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: center;
-  padding: 20px;
-  background-color: 781edf;
+  position: relative;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Estilos para el contenedor de las tarjetas */
-.cards {
-  display: flex; 
-  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en varias filas si es necesario */
-  justify-content: center; /* Alinea las tarjetas al centro */
-  gap: 20px; /* Espacio entre las tarjetas */
+.services .card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+  display: block;
+  margin: 0 auto;
 }
 
-/* Estilos para cada tarjeta */
-
-.card:hover {
-  filter: brightness(99%);
-  transition-delay: 12ms;
-  transition-duration: 1000ms;
-  backdrop-filter: 200px;
-  background-color: #32115e;
-  color:white;
-  mark:20px;
-}
-
-.card {
-  background-color: #dcc7f3; /* Color de fondo para las tarjetas */
-  padding: 18px;
-  padding:top 20px;
-  padding-bottom:220px
-  border-radius; 121px;
-  flex: 1 0 300px; /* Ancho mínimo de 300px para las tarjetas */
-  box-shadow: 0 4px 8px; rgba(0,0,0,0.1); /* Sombra suave */
-  text-align: left; /* Alinea el texto a la izquierda */
-  position: relative; /* Para posicionar la imagen */
-}
-
-/* Estilos para la imagen dentro de la tarjeta */
-.card img {
-  width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
-  height: auto; /* La altura se ajusta automáticamente para mantener las proporciones */
-  border-radius: 10px 10px 0 0; /* Redondea las esquinas superiores de la imagen */
-  display: relative; /* Evita que la imagen sobresalga del contenedor */
-}
-
-/* Estilos para el título de cada tarjeta */
-.card h3 {
-  color: #8c48cc; /* Color del título */
+.services .card h3 {
+  color: #8c48cc;
   margin-bottom: 10px;
-  margin-top: 10px; /* Espacio entre la imagen y el título */
+  margin-top: 10px;
+  text-align: center;
 }
 
-/* Estilos para el contenido de cada tarjeta */
-.card p {
-  line-height: 1.5; /* Espacio entre las líneas del texto */
+.services .card p {
+  line-height: 1.5;
+  text-align: center;
 }
 
-/* Estilos responsivos (para pantallas pequeñas) */
+/* Botón centrado en las cards de servicios */
+.services .add-to-cart {
+  background-color: #8d26b6;
+  color: #fff;
+  padding: 13px 31px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 16px auto 0 auto;
+  display: block;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+/* Responsive para las cards de servicios */
 @media (max-width: 768px) {
-  .card {
-      flex: 1 0 100%; /* Ancho de 100% para cada tarjeta en pantallas pequeñas */
+  .services .card {
+    flex: 1 0 100%;
   }
 }
+/* ...existing code... */
 
 /* Estilos para el botón "Agregar al carrito" */
 .add-to-cart {
-  background-color: #8d26b6; /* Color de fondo del botón */
-  color: rgb(255, 255, 255); /* Color del texto del botón */
-  padding: 13px 31px; /* Espacio alrededor del texto */
-  border: none; /* Elimina el borde del botón */
-  border-radius: 5px; /* Redondea las esquinas del botón */
-  cursor: pointer; /* Cambia el cursor a una mano al pasar el ratón */
-  display: right; /* El botón ocupa todo el ancho de la tarjeta */
-  margin-top: 10px; /* Espacio entre el contenido y el botón */
-  margin-left:230px;
-  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
-  /* Centrado del botón */
-  text-align: center; /* Centra el texto dentro del botón */
-  margin: 0 auto; /* Margen automático izquierdo y derecho para centrar horizontalmente */
-  display: flex; /* Habilita flexbox para la alineación vertical */
-  align-items: right; /* Centra el botón verticalmente */
-  justify-content: right;
-   /* Centra el botón horizontalmente */
-  align-content: center;
-  
+  background-color: #8d26b6;
+  color: #fff;
+  padding: 13px 31px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 16px auto 0 auto; /* Centra el botón horizontalmente y agrega espacio arriba */
+  display: block;           /* Hace que el botón ocupe solo el ancho necesario y se centre */
+  transition: background-color 0.3s ease;
+  text-align: center;
 }
+/* ...existing code... */
 
 .h2 {
   background-color: #ff0095;
