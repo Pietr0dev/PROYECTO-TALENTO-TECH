@@ -1,5 +1,11 @@
-#home {
- 
+width: 100%;
+  height: 500px;
+  opacity: 100%;
+  background-image: url('https://img.freepik.com/psd-gratis/mockup-vista-superior-disenador-grafico-portatil_23-2147675736.jpg?t=st=1730410809~exp=1730414409~hmac=754d8fb910a8765fad85d7760433d5d02505f08ab3d49663f0b49ec2d3586d2d&w=1380');
+  filter:brightness(56%);
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .home {
     text-align: center;
@@ -79,7 +85,7 @@ nav a {
   text-decoration: none;
   /* Quita el subrayado */
   font-family:'roboto'; text-align: center; /* Centrar el texto de la barra de navegación */
-  text-decoration-color: 22px; border:22 padding:;
+  text-decoration-color: 22px; border:22 padding: ;;;
 }
 
 nav a:hover {
@@ -220,7 +226,16 @@ h1 {
 
 
 
-
+/* Estilo para el párrafo de la portada */
+#home .home-paragraph {
+  background-color: black; /* Quita el fondo negro con transparent quita el fondocon TRANSPARENTt quita el fondo */ 
+  color: rgb(21, 255, 0); /* Mantiene el color del texto */
+  opacity: 100%; /* Opacidad del texto */
+  font-size: 2em; /* Tamaño de fuente del texto */
+  font-family:'Roboto';
+  padding: 0px;
+  
+}
 
 
 /* ... (tus estilos restantes) ... */
@@ -239,6 +254,7 @@ h2 {
 
 h3 {
   font-size: 3em;
+  align-items: center;
 }
 
 h4 {
@@ -276,7 +292,7 @@ h3 {
   align-content: flex-start;
   position: relative;
   float: center;
-  padding-left: 16%;
+  padding-left: 0%;
   text-align: center;
   
 }
@@ -423,7 +439,7 @@ h1 span {
   background-color: #dcc7f3; /* Color de fondo para las tarjetas */
   padding: 18px;
   padding:top 20px;
-  padding-bottom:220px;
+  padding-bottom:220px
   border-radius 121px;
   flex: 1 0 300px; /* Ancho mínimo de 300px para las tarjetas */
   box-shadow: 0 4px 8px; rgba(0,0,0,0.1); /* Sombra suave */
@@ -596,7 +612,13 @@ h1 span {
 
 }
 
-
+#carouselExample {
+  font-weight: 100px;
+  height: 11%;
+  align-content: center;
+  flex-direction:column;
+ 
+} 
 #carousel-control-prev {
   height: 30%;
   scale: 30%;
@@ -613,11 +635,11 @@ h1 span {
 
 .carousel-control-prev,
 .carousel-control-next {
-  width: 80px; /* o incluso menos */
-  height: 80px;
+  width: 40px; /* o incluso menos */
+  height: 40px;
   top: 50%;
   transform: translateY(-50%);
-  margin: 15px;
+  margin: 30px;
 }
 
 .carousel-control-prev-icon,
@@ -625,10 +647,42 @@ h1 span {
   width: 20px;
   height: 20px;
   background-size: 100% 100%; /* asegura que el ícono no se vea borroso */
-  align-content: center;
+
 }
 
+
+/* ...existing code... */
 .carousel-control-prev,
 .carousel-control-next {
+  width: 48px;
+  height: 48px;
+  top: 50%;
   transform: translateY(-50%);
+  border-radius: 50%;         /* Hace el botón circular */
+  background-color: #8c48cc;  /* Color de fondo del círculo */
+  opacity: 0.85;              /* Un poco de transparencia */
+  border: 2px solid #fff;     /* Borde blanco opcional */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 2;
+  
 }
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: #00ff15;  /* Cambia el color al pasar el mouse */
+  opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 24px;
+  height: 24px;
+  background-size: 100% 100%;
+  filter: invert(1); /* Hace el icono blanco */
+  
+}
+/* ...existing code... */
